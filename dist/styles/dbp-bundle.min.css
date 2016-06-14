@@ -1,6 +1,15 @@
-.footer-container .wrapper {
+@media (min-width: 768px) {
+  .footer-container .wrapper {
+    background: url(https://www.northwesternmutual.com/Content/NMCOM/assets/img/logo-alt-white.png) no-repeat left bottom;
+    padding-bottom: 54px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer-container .wrapper {
     background: url(https://www.northwesternmutual.com/Content/NMCOM/assets/img/logo-alt-white.png) no-repeat right bottom;
     padding-bottom: 0;
+  }
 }
 
 .panel-sliders-list {
