@@ -27,6 +27,10 @@ Northwestern Mutual will review the solution and if we’d like to proceed we wi
 
 ## Quick Start
 
+1. Launch Vagrant with `vagrant up`.
+2. Visit `localhost:8080` from your favorite browser.
+3. Edit this repo in your favorite editor.
+
 ## Architecture
 
 ## Testing
