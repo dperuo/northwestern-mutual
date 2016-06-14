@@ -1,4 +1,8 @@
-.header-container .search button {
-  background: url(https://www.northwesternmutual.com/Content/NMCOM/assets/img/icons/search.svg) no-repeat center center;
-  background-size: 38px 38px;
+.footer-container .wrapper {
+    background: url(https://www.northwesternmutual.com/Content/NMCOM/assets/img/logo-alt-white.png) no-repeat right bottom;
+    padding-bottom: 0;
+}
+
+.panel-sliders-list {
+  border-top: 4px solid #ffb81c;
 }
