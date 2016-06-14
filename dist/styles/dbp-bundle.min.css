@@ -15,3 +15,7 @@
 .panel-sliders-list {
   border-top: 4px solid #ffb81c;
 }
+
+.media-object {
+  max-width: 3rem;
+}
