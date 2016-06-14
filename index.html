@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- NWM bundle -->
+    <link rel="stylesheet" href="dist/styles/nwm-bundle.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,14 +21,179 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
-    <div class="container">
-      <div class="row header">
-        <h1 class="title">
-           <a href="/"><img src="https://www.northwesternmutual.com/~/media/nmcom/images/logos/logo.ashx?h=44&la=en&w=369" alt="Northwestern Mutual" disablewebedit="True"></a>
-        </h1>
-      </div>
-    </div>
+    <div class="header-container">
+      <div class="wrapper">
+        <header>
+          <h1 class="title">
+            <a href="/"><img src="https://www.northwesternmutual.com/~/media/nmcom/images/logos/logo.ashx?h=44&la=en&w=369" alt="Northwestern Mutual" disablewebedit="True"></a>
+          </h1>
+          <nav class="">
+            <button type="button" class="nav-toggle">Toggle Menu</button>
+            <div class="nav-menus">
+               <ul class="main">
+                  <li class="">
+                    <div class="title toggle-more">
+                      <a href="/financial-guidance">Financial Guidance</a>
+                      <button type="button">&gt;Toggle More</button>
+                    </div>
+                    <div class="sub-menu">
+                      <div class="title">Financial Guidance</div>
+                      <ul class="column">
+                        <li><a title="Financial Process" href="/financial-guidance/our-financial-planning-process" disablewebedit="True"> Our Financial Planning Process</a></li>
+                        <li><a href="/financial-guidance/life-events" disablewebedit="True"> Life Events</a></li>
+                        <li><a href="/financial-guidance/planning-priorities" disablewebedit="True"> Planning Priorities</a></li>
+                        <li><a href="/financial-guidance/financial-basics" disablewebedit="True"> Financial Basics</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="/financial-guidance/insights-and-ideas" disablewebedit="True"> Insights &amp; Ideas</a></li>
+                        <li><a class="view-all" href="/financial-guidance">Learn More about Financial Guidance</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="">
+                    <div class="title toggle-more">
+                      <a href="/products-and-services">Products &amp; Services</a>
+                      <button type="button">&gt;Toggle More</button>
+                    </div>
+                    <div class="sub-menu">
+                      <div class="title">Products &amp; Services</div>
+                        <ul class="column">
+                          <li><a href="/products-and-services/life-insurance" disablewebedit="True"> Life Insurance</a></li>
+                          <li><a href="/products-and-services/disability-insurance" disablewebedit="True"> Disability Insurance</a></li>
+                          <li><a href="/products-and-services/long-term-care" disablewebedit="True"> Long-Term Care</a></li>
+                          <li><a href="/products-and-services/annuities" disablewebedit="True"> Annuities</a></li>
+                        </ul>
+                        <ul>
+                          <li><a href="/products-and-services/investment-products-and-trust-services" disablewebedit="True"> Investment Products and Services</a></li>
+                          <li><a href="/products-and-services/education-funding" disablewebedit="True"> Education Funding</a></li><li><a class="view-all" href="/products-and-services">View all Products &amp; Services</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="">
+                      <div class="title toggle-more">
+                        <a href="/business-owners">Business Owners</a>
+                        <button type="button">&gt;Toggle More</button>
+                      </div>
+                      <div class="sub-menu">
+                        <div class="title">Business Owners</div>
+                        <ul class="column">
+                          <li><a title="Financial Guidance" href="/business-owners/planning-and-guidance" disablewebedit="True"> Planning and Guidance</a></li>
+                          <li><a title="Solutions" href="/business-owners/solutions" disablewebedit="True"> Solutions</a></li>
+                          <li><a class="view-all" href="/business-owners">For Business Owners</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="">
+                      <div class="title toggle-more">
+                        <a href="/learning-center">Learning Center</a>
+                        <button type="button">&gt;Toggle More</button>
+                      </div>
+                      <div class="sub-menu">
+                        <div class="title">Learning Center</div>
+                        <ul class="column">
+                          <li><a href="/learning-center/financial-planning" disablewebedit="True"> Financial Planning</a></li>
+                          <li><a href="/learning-center/for-your-business" disablewebedit="True"> For Your Business</a></li>
+                          <li><a href="/learning-center/insurance-and-annuities" disablewebedit="True"> Insurance And Annuities</a></li>
+                          <li><a href="/learning-center/investments" disablewebedit="True"> Investments</a></li>
+                        </ul>
+                        <ul>
+                          <li><a href="/learning-center/living-in-retirement" disablewebedit="True"> Living In Retirement</a></li>
+                          <li><a href="/learning-center/saving-for-retirement" disablewebedit="True"> Saving For Retirement</a></li>
+                          <li><a class="view-all" href="/learning-center">View Learning Center</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="title toggle-more">
+                        <a href="/about-us">About Us</a>
+                        <button type="button">&gt;Toggle More</button>
+                      </div>
+                      <div class="sub-menu">
+                        <div class="title">About Us</div>
+                        <ul class="column">
+                          <li><a title="Our Story" href="/about-us/our-story" disablewebedit="True"> Our Story</a></li>
+                          <li><a href="/about-us/what-we-believe" disablewebedit="True"> What We Believe</a></li>
+                          <li><a href="/about-us/how-we-help-people" disablewebedit="True"> How We Help People</a></li>
+                          <li><a href="/about-us/who-guides-us" disablewebedit="True"> Who Guides Us</a></li>
+                          <li><a href="/about-us/what-we-believe/our-commitment-to-financial-strength" disablewebedit="True"> Financial Information</a></li>
+                          <li><a href="/news-room" disablewebedit="True"> Newsroom</a></li>
+                          <li><a href="/about-us/sponsorships" disablewebedit="True"> Sponsorships</a></li>
+                          <li><a href="/about-us/northwestern-mutual-subsidiaries" disablewebedit="True"> Northwestern Mutual Subsidiaries</a></li>
+                          <li><a class="view-all" href="/about-us">About Us</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="title toggle-more">
+                        <a href="/careers">Careers</a>
+                        <button type="button">&gt;Toggle More</button>
+                      </div>
+                      <div class="sub-menu">
+                        <div class="title">Careers</div>
+                        <ul class="column">
+                          <li><a title="FR Career" href="/careers/about-our-fr-career" disablewebedit="True"> Financial Representative Careers</a></li>
+                          <li><a title="Internship" href="/careers/about-our-financial-representative-internship" disablewebedit="True"> Financial Representative Internship</a></li>
+                          <li><a href="/careers/about-our-fr-career-for-military-vets" disablewebedit="True"> Careers for Military Veterans</a></li>
+                          <li><a title="Corporate Opportunities" href="/careers/corporate-opportunities" disablewebedit="True"> Corporate Careers</a></li>
+                          <li><a title="Office Locator" href="/office-locator" disablewebedit="True"> Find an Office</a></li>
+                          <li><a class="view-all" href="/careers">View our Careers</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="secondary">
+                    <li>
+                      <a href="/financial-professional-locator" disablewebedit="True"> Find a Financial Professional</a>
+                    </li>
+                    <li>
+                      <a href="/customer-service-center" disablewebedit="True"> Customer Service</a>
+                    </li>
+                    <li>
+                      <div class="title">
+                        <a class="header-menu-login-landing" disablewebedit="True"> Log In</a>
+                        <button type="button">Toggle More</button>
+                      </div>
+                      <div class="sub-menu">
+                        <div class="title">Login</div>
+                        <ul class="column">
+                              <li><a class="" href="https://nmc.northwesternmutual.com/" target="">Personal Insurance &amp; Investments <span>Summary</span> </a></li>
+                              <li><a class="" href="https://www2.netxselect.com/home_NWM.htm" target="">Brokerage &amp; Advisory <span>Northwestern Mutual Investment Services</span> </a></li>
+                              <li><a class="" href="https://service2.nml.com/bcis/update/login" target="">Business Insurance <span></span> </a></li>
+                              <li><a class="" href="https://northwesternmutual.cconnect.com" target="">Trust &amp; Private Client Services <span></span> </a></li>
+                              <li><a class="" href="https://www.eaccountservices.com/NM/" target="">NM Access Funds <span></span> </a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="search">
+                      <form id="searchform" action="/search" method="get">
+                        <div id="headerSearchBoxContainer" class="search-box-container">
+                          <input type="search" id="q" name="q" placeholder="Search" class="placeholder search-placeholder search-box ui-autocomplete-input" autocomplete="off">
+                          <div id="headerSearchHintsContainer" class="search-hints-container" style="display: none;">
+                            <div class="search-hints">
+                              <ul class="hints"></ul>
+                            </div>
+                          </div>
+                          <input id="headerSearchButton" type="submit" value="Search">
+                        </div>
+                      </form>
+                      <button type="button">Toggle Search</button>
+                    </div>
+                    <script type="text/template" id="header-search-hints-template">
+                      {% _.each(suggestions, function(suggestion) { %}
+                      <li data-term="{{suggestion.NormalizedTerm}}">{{suggestion.term}}</li>
+                      {% }); %}
+                    </script>
+                    <script type="text/javascript">
+                      domReady(function(){(function(n){var t={DefaultText:"Search",ButtonLabel:"Search",MaxSearchHints:parseInt(7),MinSearchHintCharacters:parseInt(3)},i;t.Input={SearchInput:n("#q"),SearchButton:n("#headerSearchButton")};t.Containers={SearchContainer:n("#headerSearchBoxContainer"),SearchHintsContainer:n("#headerSearchHintsContainer"),SearchHintsResultsContainer:n("#headerSearchHintsContainer > .search-hints > ul")};t.Selectors={searchInput:"#q",resultsTemplate:"#header-search-hints-template"};i=nmcom.search.SearchBox.Init(t)})(window.jQuery)})
+                    </script>
+                  </nav>
+                </header>
+              </div>
+            </div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
