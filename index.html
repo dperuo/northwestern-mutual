@@ -29,7 +29,7 @@
     <![endif]-->
   </head>
 
-  <body ng-app="nwmApp">
+  <body ng-app="nwmApp" ng-cloak>
     <div class="header-container">
       <div class="wrapper">
         <header>
@@ -49,23 +49,26 @@
                 <div class="row">
                   <div class="col-md-6 panel-sliders-list">
                     <h1>Top 100 Employees (Today)</h1>
-                    <ul>
-                      <li>{{ 1 + 2 }} = 3</li>
-                      <li>hello {{ ctrl.hello }}</li>
-                      <li>3</li>
-                      <li>4</li>
-                      <li>5</li>
+                    <ul class="media-list">
+                      <li class="media" ng-repeat="person in ctrl.results">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" ng-src="{{person.picture.large}}" alt="{{person.name.first}}">
+                          </a>
+                        </div>
+                        <div class="media-body media-middle">
+                          <h3 class="media-heading">{{person.name.first}} {{person.name.last}}</h3>
+                          <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p> -->
+                          <div>
+                        </div>
+                      </li>
                     </ul>
                   </div>
 
                   <div class="col-md-6 panel-sliders-list">
                     <h1>Top 100 Employees (All Time)</h1>
                     <ul>
-                      <li>1</li>
-                      <li>2</li>
-                      <li>3</li>
-                      <li>4</li>
-                      <li>5</li>
+                      <li ng-repeat="person in ctrl.results">{{person.name.first + ' ' + person.name.last}}</li>
                     </ul>
                   </div>
                 </div>
