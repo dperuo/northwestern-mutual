@@ -11,10 +11,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
     <!-- NWM bundle -->
     <link rel="stylesheet" href="dist/styles/nwm-bundle.min.css">
     <!-- DBP custom bundle -->
     <link rel="stylesheet" href="dist/styles/dbp-bundle.min.css">
+
+    <!-- Add Angular.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" charset="utf-8"></script>
+    <script src="dist/scripts/bundle.min.js" charset="utf-8"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,7 +29,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body ng-app="nwmApp">
     <div class="header-container">
       <div class="wrapper">
         <header>
@@ -35,7 +40,7 @@
       </div>
     </div>
 
-    <div class="main-container">
+    <div class="main-container" ng-controller="nwmCtrl as ctrl">
       <div class="main home">
         <article>
           <div class="page-element">
@@ -45,8 +50,8 @@
                   <div class="col-md-6 panel-sliders-list">
                     <h1>Top 100 Employees (Today)</h1>
                     <ul>
-                      <li>1</li>
-                      <li>2</li>
+                      <li>{{ 1 + 2 }} = 3</li>
+                      <li>hello {{ ctrl.hello }}</li>
                       <li>3</li>
                       <li>4</li>
                       <li>5</li>
@@ -92,7 +97,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
   </body>
 </html>
