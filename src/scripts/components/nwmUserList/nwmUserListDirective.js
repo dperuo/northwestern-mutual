@@ -6,9 +6,9 @@ angular
   .module('nwmUserList')
   .directive('nwmUserList', nwmUserListFn);
 
-nwmUserListFn.$inject = ['nwmUserListService'];
+nwmUserListFn.$inject = ['$filter', 'nwmUserListService'];
 
-function nwmUserListFn(nwmUserListService) {
+function nwmUserListFn($filter, nwmUserListService) {
   return {
     restrict: 'E',
     scope: {
@@ -20,19 +20,29 @@ function nwmUserListFn(nwmUserListService) {
       var vm = scope;
 
       vm.title = vm.listTitle;
+      vm.isReversed = false;
 
-      nwmUserListService
-        .getList(nwmUserListEndpoints[vm.listData])
-        .then(function(success) {
-          var withFullName = success.data.results.map(function(value, index, array) {
-            var first = value.name.first.charAt(0).toUpperCase() + value.name.first.slice(1);
-            var last = value.name.last.charAt(0).toUpperCase() + value.name.last.slice(1);
-            value.fullName = [last, first].join(', ');
-            return value;
+      getList();
+
+      function getList() {
+        nwmUserListService
+          .getList(nwmUserListEndpoints[vm.listData])
+          .then(function(success) {
+            var withFullName = success.data.results.map(function(value, index, array) {
+              var first = value.name.first.charAt(0).toUpperCase() + value.name.first.slice(1);
+              var last = value.name.last.charAt(0).toUpperCase() + value.name.last.slice(1);
+              value.fullName = [last, first].join(', ');
+              return value;
+            })
+
+            vm.results = $filter('orderBy')(withFullName, 'fullName', vm.isReversed)
           })
+      }
 
-          vm.results = angular.copy(withFullName);
-        })
+      vm.sortList = function sortListFn(isReversed) {
+        vm.isReversed = (angular.isUndefined(isReversed)) ? false : true;
+        getList();
+      }
     }
   }
 }

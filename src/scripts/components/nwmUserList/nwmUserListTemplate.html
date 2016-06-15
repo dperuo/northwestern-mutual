@@ -1,15 +1,28 @@
 <div class="nwm-user-list-container">
-  <h1>{{ title }}</h1>
-  <ul class="media-list">
-    <li class="media" ng-repeat="user in results | orderBy:'fullName' track by $index">
-      <div class="media-left">
-        <a href="#">
-          <img class="media-object" ng-src="{{user.picture.large}}" alt="{{user.fullName}}">
-        </a>
-      </div>
-      <div class="media-body media-middle">
-        <h3 class="media-heading">{{user.fullName}}</h3>
-      </div>
-    </li>
-  </ul>
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>{{ title }}</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 text-right">
+      <button type="button" class="btn btn-link" ng-click="sortList()">A&ndash;Z</button>|<button type="button" class="btn btn-link" ng-click="sortList('reverse')">Z&ndash;A</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="media-list">
+        <li class="media" ng-repeat="user in results track by $index">
+          <div class="media-left">
+            <img class="media-object" ng-src="{{user.picture.large}}" alt="{{user.fullName}}">
+          </div>
+          <div class="media-body media-middle">
+            <h3 class="media-heading">{{user.fullName}}</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
