@@ -31,6 +31,10 @@ Northwestern Mutual will review the solution and if we’d like to proceed we wi
 2. Visit `localhost:8080` from your favorite browser.
 3. Edit this repo in your favorite editor.
 
+- Rebuild JavaScript using `npm run build:js`.
+- Rebuild CSS using `npm un build:scss`.
+- Rebuild JavaScript and CSS using `npm run build`.
+
 ## Architecture
 
 ## Testing
