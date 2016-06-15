@@ -48,24 +48,13 @@
               <div class="panel-sliders-container">
                 <div class="row">
                   <div class="col-md-offset-1 col-md-5 panel-sliders-list">
-                    <nwm-user-list list-title="Top 20 Employees (Today)" list-data="ctrl.results"></nwm-user-list>
+                    <nwm-user-list list-title="Top 20 Employees (Today)" list-data="today"></nwm-user-list>
                   </div>
 
                   <div class="col-md-5 panel-sliders-list">
-                    <h1>Top 20 Employees (All Time)</h1>
-                    <ul>
-                      <li ng-repeat="person in ctrl.results">{{person.name.first + ' ' + person.name.last}}</li>
-                    </ul>
+                    <nwm-user-list list-title="Top 20 Employees (All Time)" list-data="alltime"></nwm-user-list>
                   </div>
                 </div>
-                <!--
-                <div class="panel-sliders-intro">
-                  <h1 class="panel-sliders-title">Top 100 Employees (Today)</h1>
-                  <p>
-                    Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.
-                  </p>
-                </div>
-              -->
               </div>
             </div>
           </div>
