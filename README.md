@@ -1,6 +1,6 @@
-| Travis CI | npm |
-| :-: | :-: |
-| [![Build Status](https://travis-ci.org/dperuo/riker-ipsum.svg?branch=master)](https://travis-ci.org/dperuo/riker-ipsum) | [![npm version](https://badge.fury.io/js/riker-ipsum.svg)](http://badge.fury.io/js/riker-ipsum) |
+| Travis CI |
+| :-: |
+| [![Build Status](https://travis-ci.org/dperuo/northwestern-mutual.svg?branch=master)](https://travis-ci.org/dperuo/northwestern-mutual) |
 
 # Code Challenge for Northwestern Mutual
 
