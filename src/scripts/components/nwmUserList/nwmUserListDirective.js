@@ -24,8 +24,14 @@ function nwmUserListFn(nwmUserListService) {
       nwmUserListService
         .getList(nwmUserListEndpoints[vm.listData])
         .then(function(success) {
-          vm.results = success.data.results;
-          console.log(vm.results);
+          var withFullName = success.data.results.map(function(value, index, array) {
+            var first = value.name.first.charAt(0).toUpperCase() + value.name.first.slice(1);
+            var last = value.name.last.charAt(0).toUpperCase() + value.name.last.slice(1);
+            value.fullName = [last, first].join(', ');
+            return value;
+          })
+
+          vm.results = angular.copy(withFullName);
         })
     }
   }

@@ -1,14 +1,14 @@
 <div class="nwm-user-list-container">
   <h1>{{ title }}</h1>
   <ul class="media-list">
-    <li class="media" ng-repeat="user in results track by $index">
+    <li class="media" ng-repeat="user in results | orderBy:'fullName' track by $index">
       <div class="media-left">
         <a href="#">
-          <img class="media-object" ng-src="{{user.picture.large}}" alt="{{user.name.first}} {{user.name.last}}">
+          <img class="media-object" ng-src="{{user.picture.large}}" alt="{{user.fullName}}">
         </a>
       </div>
       <div class="media-body media-middle">
-        <h3 class="media-heading">{{user.name.first}} {{user.name.last}}</h3>
+        <h3 class="media-heading">{{user.fullName}}</h3>
       </div>
     </li>
   </ul>
