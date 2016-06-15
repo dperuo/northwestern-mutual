@@ -1,0 +1,15 @@
+<div class="nwm-user-list-container">
+  <h1>{{ listTitle }}</h1>
+  <ul class="media-list">
+    <li class="media" ng-repeat="user in listData">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" ng-src="{{user.picture.large}}" alt="{{user.name.first}} {{user.name.last}}">
+        </a>
+      </div>
+      <div class="media-body media-middle">
+        <h3 class="media-heading">{{user.name.first}} {{user.name.last}}</h3>
+      </div>
+    </li>
+  </ul>
+</div>

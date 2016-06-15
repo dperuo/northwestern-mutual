@@ -48,21 +48,7 @@
               <div class="panel-sliders-container">
                 <div class="row">
                   <div class="col-md-offset-1 col-md-5 panel-sliders-list">
-                    <h1>Top 20 Employees (Today)</h1>
-                    <ul class="media-list">
-                      <li class="media" ng-repeat="person in ctrl.results">
-                        <div class="media-left">
-                          <a href="#">
-                            <img class="media-object" ng-src="{{person.picture.large}}" alt="{{person.name.first}}">
-                          </a>
-                        </div>
-                        <div class="media-body media-middle">
-                          <h3 class="media-heading">{{person.name.first}} {{person.name.last}}</h3>
-                          <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p> -->
-                          <div>
-                        </div>
-                      </li>
-                    </ul>
+                    <nwm-user-list list-title="Top 20 Employees (Today)" list-data="ctrl.results"></nwm-user-list>
                   </div>
 
                   <div class="col-md-5 panel-sliders-list">
