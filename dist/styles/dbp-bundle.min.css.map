@@ -3,14 +3,16 @@
 	"file": "dbp-bundle.min.css",
 	"sources": [
 		"../../src/styles/app.scss",
+		"../../src/styles/_style-guide.scss",
 		"../../src/styles/components/user-list.scss",
 		"../../src/styles/components/footer.scss"
 	],
 	"sourcesContent": [
-		"\n@import 'components/user-list';\n@import 'components/footer';\n",
+		"\n@import '_style-guide';\n\n@import 'components/user-list';\n@import 'components/footer';\n",
+		"$color-palette: (\n  honey: #ffb81c,\n  navy: #002b49,\n  slate: #777,\n  steel: #eee,\n);\n\n// $font-palette: (\n//   bold: \"Guardian-Bold\",\"HelveticaNeue-Bold\",\"Helvetica Neue Bold\",\"Helvetica Neue\",Helvetica,Arial,\"Lucida Grande\",sans-serif,\n//   light: \"Guardian-Light\",\"HelveticaNeue-Light\",\"Helvetica Neue Light\",\"Helvetica Neue\",Helvetica,Arial,\"Lucida Grande\",sans-serif,\n// );\n",
 		".nwm-user-list-title {\n  font-family: \"Guardian-Bold\",\"HelveticaNeue-Bold\",\"Helvetica Neue Bold\",\"Helvetica Neue\",Helvetica,Arial,\"Lucida Grande\",sans-serif;\n}\n\n.nwm-user-list-heading,\n.nwm-user-list-link {\n  font-family: \"Guardian-Light\",\"HelveticaNeue-Light\",\"Helvetica Neue Light\",\"Helvetica Neue\",Helvetica,Arial,\"Lucida Grande\",sans-serif;\n}\n\n.panel-sliders-list {\n  border-top: 4px solid #ffb81c;\n}\n\n.media-object {\n  max-width: 3rem;\n}\n",
 		".footer-container .wrapper {\n  @media (min-width: 768px) {\n    background: url(https://www.northwesternmutual.com/Content/NMCOM/assets/img/logo-alt-white.png) no-repeat left bottom;\n    padding-bottom: 54px;\n  }\n\n  @media (min-width: 1000px) {\n    background: url(https://www.northwesternmutual.com/Content/NMCOM/assets/img/logo-alt-white.png) no-repeat right bottom;\n    padding-bottom: 0;\n  }\n}\n"
 	],
-	"mappings": "ACAA,AAAA,oBAAoB,AAAC,CACnB,WAAW,CAAE,sHAAuH,CACrI,AAED,AAAA,sBAAsB,CACtB,AAAA,mBAAmB,AAAC,CAClB,WAAW,CAAE,yHAA0H,CACxI,AAED,AAAA,mBAAmB,AAAC,CAClB,UAAU,CAAE,iBAAkB,CAC/B,AAED,AAAA,aAAa,AAAC,CACZ,SAAS,CAAE,IAAK,CACjB,ACdC,MAAM,EAAL,SAAS,EAAE,KAAK,EADnB,AAAkB,iBAAD,CAAC,QAAQ,AAAC,CAEvB,UAAU,CAAoF,mFAAC,CAAC,SAAS,CAAC,IAAI,CAAC,MAAM,CACrH,cAAc,CAAE,IAAK,CAOxB,CAJC,MAAM,EAAL,SAAS,EAAE,MAAM,EANpB,AAAkB,iBAAD,CAAC,QAAQ,AAAC,CAOvB,UAAU,CAAoF,mFAAC,CAAC,SAAS,CAAC,KAAK,CAAC,MAAM,CACtH,cAAc,CAAE,CAAE,CAErB",
+	"mappings": "AEAA,AAAA,oBAAoB,AAAC,CACnB,WAAW,CAAE,sHAAuH,CACrI,AAED,AAAA,sBAAsB,CACtB,AAAA,mBAAmB,AAAC,CAClB,WAAW,CAAE,yHAA0H,CACxI,AAED,AAAA,mBAAmB,AAAC,CAClB,UAAU,CAAE,iBAAkB,CAC/B,AAED,AAAA,aAAa,AAAC,CACZ,SAAS,CAAE,IAAK,CACjB,ACdC,MAAM,EAAL,SAAS,EAAE,KAAK,EADnB,AAAkB,iBAAD,CAAC,QAAQ,AAAC,CAEvB,UAAU,CAAoF,mFAAC,CAAC,SAAS,CAAC,IAAI,CAAC,MAAM,CACrH,cAAc,CAAE,IAAK,CAOxB,CAJC,MAAM,EAAL,SAAS,EAAE,MAAM,EANpB,AAAkB,iBAAD,CAAC,QAAQ,AAAC,CAOvB,UAAU,CAAoF,mFAAC,CAAC,SAAS,CAAC,KAAK,CAAC,MAAM,CACtH,cAAc,CAAE,CAAE,CAErB",
 	"names": []
 }
