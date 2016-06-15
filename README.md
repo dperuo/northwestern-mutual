@@ -28,10 +28,11 @@ Northwestern Mutual will review the solution and if we’d like to proceed we wi
 ## Quick Start
 
 1. Install dependencies using `npm install`.
-2. Update Protractor's Selenium server using `webdriver-manager update`.
-3. Launch Vagrant with `vagrant up`.
-4. Visit `localhost:8080` from your favorite browser to view the app.
-5. Edit this repo in your favorite editor. Changes are pushed to the Vagrant server automatically.
+2. Launch [Vagrant][v] with `vagrant up`.
+3. Visit `localhost:8080` from your favorite browser to use the app.
+4. Edit this repo in your favorite editor. Changes are passed to Vagrant automatically.
+
+[v]: https://www.vagrantup.com/
 
 - Rebuild JavaScript using `npm run build:js`.
 - Rebuild CSS using `npm un build:scss`.
