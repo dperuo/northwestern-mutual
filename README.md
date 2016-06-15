@@ -36,10 +36,21 @@ Northwestern Mutual will review the solution and if we’d like to proceed we wi
 - Rebuild JavaScript using `npm run build:js`.
 - Rebuild CSS using `npm un build:scss`.
 - Rebuild JavaScript and CSS using `npm run build`.
+- Run Protractor using `npm test` or `npm run test`
 
 ## Architecture
 
-
-
-
-## Testing
+| Location | Description
+| :--- | :---
+| `dist/` | Distribution files. Updated on rebuild.
+| `src/` | Source files. Make your changes and additions here.
+| `test/` | Test specs used by Protractor
+| `bootstrap.sh` | Configuration file used by Vagrant on initial load
+| `CONTRIBUTING.md` | Information on how to contribute to this repo
+| `index.html` | Main HTML page for this repo
+| `LICENSE` | Information on licensing this repo
+| `package.json` | Configuration file for npm
+| `protractor.config.js` | Configuration file for Protractor
+| `README.md` | This file.
+| `Vagrantfile` | Configuration file for Vagrant
+| `webpack.config.js` | Configuration file for Webpack
