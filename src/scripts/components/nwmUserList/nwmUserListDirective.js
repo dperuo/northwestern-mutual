@@ -1,6 +1,6 @@
-var nwmUserListEndpoints = require('json!./nwmUserListEndpoints.json');
+var nwmUserListEndpoints = require('./nwmUserListEndpoints.json');
 var nwmUserListService = require('./nwmUserListService.js');
-var nwmUserListTemplate = require('html!./nwmUserListTemplate.html');
+var nwmUserListTemplate = require('./nwmUserListTemplate.html');
 
 angular
   .module('nwmUserList')

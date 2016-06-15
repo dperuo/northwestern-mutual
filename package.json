@@ -6,7 +6,7 @@
     "webpack": "^1.13.1"
   },
   "scripts": {
-    "build:js": "webpack src/scripts/app.js dist/scripts/dbp-bundle.min.js --optimize-minimize --optimize-occurrence-order --source-map",
+    "build:js": "webpack --optimize-minimize",
     "build:scss": "node-sass --output-style compressed src/styles/app.scss dist/styles/dbp-bundle.min.css --source-map true --source-map-contents sass",
     "build": "npm run build:js && npm run build:scss"
   }
