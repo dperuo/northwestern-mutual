@@ -1,0 +1,4 @@
+{
+  "alltime": "https://randomuser.me/api/?callback=JSON_CALLBACK&noinfo&results=20&nat=gb",
+  "today": "https://randomuser.me/api/?callback=JSON_CALLBACK&noinfo&results=20&nat=ca"
+}
