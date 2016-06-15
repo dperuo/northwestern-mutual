@@ -24,6 +24,11 @@ function nwmUserListFn($filter, nwmUserListService) {
 
       getList();
 
+      vm.sortList = function sortListFn(isReversed) {
+        vm.isReversed = (angular.isUndefined(isReversed)) ? false : true;
+        setResults();
+      }
+
       function getList() {
         nwmUserListService
           .getList(nwmUserListEndpoints[vm.listData])
@@ -35,13 +40,13 @@ function nwmUserListFn($filter, nwmUserListService) {
               return value;
             })
 
-            vm.results = $filter('orderBy')(withFullName, 'fullName', vm.isReversed)
+            setResults(withFullName)
           })
       }
 
-      vm.sortList = function sortListFn(isReversed) {
-        vm.isReversed = (angular.isUndefined(isReversed)) ? false : true;
-        getList();
+      function setResults(array) {
+        var collection = (angular.isDefined(array)) ? angular.copy(array) : angular.copy(vm.results);
+        vm.results = $filter('orderBy')(collection, 'fullName', vm.isReversed)
       }
     }
   }
