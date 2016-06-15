@@ -1,8 +1,8 @@
-require('./components/userList');
+require('./components/nwmUserList');
 
 angular
   .module('nwmApp', [
-    'userList'
+    'nwmUserList'
   ])
   .controller('nwmCtrl', nwmCtrlFn);
 
