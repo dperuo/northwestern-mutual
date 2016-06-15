@@ -45,6 +45,7 @@ Northwestern Mutual will review the solution and if we’d like to proceed we wi
 | `dist/` | Distribution files. Updated on rebuild.
 | `src/` | Source files. Make your changes and additions here.
 | `test/` | Test specs used by Protractor
+| `.travi.yml` | Configuration file for Travis CI.
 | `bootstrap.sh` | Configuration file used by Vagrant on initial load
 | `CONTRIBUTING.md` | Information on how to contribute to this repo
 | `index.html` | Main HTML page for this repo
