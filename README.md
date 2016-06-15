@@ -34,10 +34,16 @@ Northwestern Mutual will review the solution and if we’d like to proceed we wi
 
 [v]: https://www.vagrantup.com/
 
-- Rebuild JavaScript using `npm run build:js`.
-- Rebuild CSS using `npm un build:scss`.
-- Rebuild JavaScript and CSS using `npm run build`.
-- Run Protractor using `npm test` or `npm run test`
+## Build and Test Commands
+
+| Command | Use
+| :--- | :---
+| `npm run build:js` | Rebuild JavaScript
+| `npm un build:scss` | Rebuild CSS
+| `npm run build` | Rebuild JavaScript and CSS
+| `npm test`<br/>`npm run test` | Run [Protractor][p] test suite
+
+[p]: http://www.protractortest.org/#/
 
 ## Architecture
 
