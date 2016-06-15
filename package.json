@@ -12,11 +12,14 @@
     "node-sass": "^3.7.0",
     "webpack": "^1.13.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "protractor": "^3.3.0"
+  },
   "scripts": {
     "build:js": "webpack --optimize-minimize",
     "build:scss": "node-sass --output-style compressed src/styles/app.scss dist/styles/dbp-bundle.min.css --source-map true --source-map-contents sass",
-    "build": "npm run build:js && npm run build:scss"
+    "build": "npm run build:js && npm run build:scss",
+    "test": "protractor protractor.config.js"
   },
   "repository": {
     "type": "git",
