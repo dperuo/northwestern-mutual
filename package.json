@@ -1,13 +1,31 @@
 {
-  "devDependencies": {
+  "name": "northwestern-mutual",
+  "version": "1.0.0",
+  "description": "Code Challenge for Northwestern Mutual",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
     "html-loader": "^0.4.3",
     "json-loader": "^0.5.4",
     "node-sass": "^3.7.0",
     "webpack": "^1.13.1"
   },
+  "devDependencies": {},
   "scripts": {
     "build:js": "webpack --optimize-minimize",
     "build:scss": "node-sass --output-style compressed src/styles/app.scss dist/styles/dbp-bundle.min.css --source-map true --source-map-contents sass",
     "build": "npm run build:js && npm run build:scss"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dperuo/northwestern-mutual.git"
+  },
+  "author": "Derek Peruo <derek@derekperuo.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dperuo/northwestern-mutual/issues"
+  },
+  "homepage": "https://github.com/dperuo/northwestern-mutual#readme"
 }
