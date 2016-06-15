@@ -1,7 +1,7 @@
 <div class="nwm-user-list-container">
-  <h1>{{ listTitle }}</h1>
+  <h1>{{ title }}</h1>
   <ul class="media-list">
-    <li class="media" ng-repeat="user in listData">
+    <li class="media" ng-repeat="user in results track by $index">
       <div class="media-left">
         <a href="#">
           <img class="media-object" ng-src="{{user.picture.large}}" alt="{{user.name.first}} {{user.name.last}}">

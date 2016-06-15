@@ -1,3 +1,4 @@
+var nwmUserListEndpoints = require('json!./nwmUserListEndpoints.json');
 var nwmUserListService = require('./nwmUserListService.js');
 var nwmUserListTemplate = require('html!./nwmUserListTemplate.html');
 
@@ -12,13 +13,20 @@ function nwmUserListFn(nwmUserListService) {
     restrict: 'E',
     scope: {
       listTitle: '@',
-      listData: '='
+      listData: '@'
     },
     template: nwmUserListTemplate,
     link: function (scope, elem, attr) {
       var vm = scope;
 
-      console.log(nwmUserListService)
+      vm.title = vm.listTitle;
+
+      nwmUserListService
+        .getList(nwmUserListEndpoints[vm.listData])
+        .then(function(success) {
+          vm.results = success.data.results;
+          console.log(vm.results);
+        })
     }
   }
 }
